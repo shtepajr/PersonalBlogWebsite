@@ -1,0 +1,11 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="760" height="280" viewBox="0 0 760 280" role="img" aria-label="Схема редактора: код, чат і термінал">
+  <rect width="760" height="280" fill="#fffaf3"/>
+  <rect x="24" y="24" width="430" height="232" rx="16" fill="#f3ecdf" stroke="#c46a45" stroke-width="3"/>
+  <rect x="470" y="24" width="266" height="140" rx="16" fill="#f3ecdf" stroke="#1e1a16" stroke-width="3"/>
+  <rect x="470" y="180" width="266" height="76" rx="16" fill="#241f1b"/>
+  <text x="48" y="68" fill="#b8431f" font-family="Georgia, serif" font-size="22">Редактор</text>
+  <path d="M48 96h250M48 122h190M48 148h280M48 174h150" stroke="#1e1a16" stroke-width="4" stroke-linecap="round"/>
+  <text x="494" y="68" fill="#1e1a16" font-family="Georgia, serif" font-size="22">Чат</text>
+  <path d="M494 98h180M494 124h140" stroke="#6d6258" stroke-width="4" stroke-linecap="round"/>
+  <text x="494" y="222" fill="#f6efe6" font-family="Consolas, monospace" font-size="18">термінал</text>
+</svg>

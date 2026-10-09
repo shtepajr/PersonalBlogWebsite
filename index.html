@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="uk">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Нотатки — добірка для розробки</title>
+  <meta name="description" content="Короткі статті про C#, DevOps, AI та інструменти в редакторі.">
+  <link rel="icon" href="assets/favicon.svg" type="image/svg+xml">
+  <link rel="stylesheet" href="css/main.css">
+  <script>
+    (function () {
+      try {
+        var stored = localStorage.getItem("theme");
+        var theme = stored || (window.matchMedia("(prefers-color-scheme: dark)").matches ? "dark" : "light");
+        document.documentElement.setAttribute("data-theme", theme);
+      } catch (error) {
+        document.documentElement.setAttribute("data-theme", "light");
+      }
+    })();
+  </script>
+</head>
+<body>
+  <header class="site-header">
+    <a class="brand" href="./">Нотатки</a>
+    <button type="button" class="theme-toggle" data-theme-toggle>Темна тема</button>
+  </header>
+  <main class="page">
+    <p class="kicker">Добірка матеріалів</p>
+    <h1>Корисне з розробки, без зайвого шуму</h1>
+    <p class="lede">Конспекти, огляди інструментів і короткі нотатки. Шукайте за назвою або звузьте список одним тегом.</p>
+    <div class="toolbar">
+      <label class="search">
+        <span class="search-label">Пошук за назвою</span>
+        <input id="search" type="search" placeholder="Наприклад, Cursor або C#" autocomplete="off">
+      </label>
+      <div id="tag-filters" class="tags" role="group" aria-label="Фільтр за тегами"></div>
+    </div>
+    <p id="result-meta" class="result-meta"></p>
+    <ul id="card-list" class="cards"></ul>
+    <p id="empty" class="empty" hidden>Нічого не знайдено. Спробуйте іншу назву або скиньте тег.</p>
+  </main>
+  <footer class="site-footer">Статичний блог. Сторінки відкриваються без збірки і без зовнішніх скриптів.</footer>
+  <script src="js/posts.js"></script>
+  <script src="js/theme.js"></script>
+  <script src="js/home.js"></script>
+</body>
+</html>

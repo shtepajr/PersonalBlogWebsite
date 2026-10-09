@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="uk">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Стаття — Нотатки</title>
+  <meta name="description" content="Нотатка з добірки матеріалів про розробку.">
+  <link rel="icon" href="assets/favicon.svg" type="image/svg+xml">
+  <link rel="stylesheet" href="css/main.css">
+  <script>
+    (function () {
+      try {
+        var stored = localStorage.getItem("theme");
+        var theme = stored || (window.matchMedia("(prefers-color-scheme: dark)").matches ? "dark" : "light");
+        document.documentElement.setAttribute("data-theme", theme);
+      } catch (error) {
+        document.documentElement.setAttribute("data-theme", "light");
+      }
+    })();
+  </script>
+</head>
+<body>
+  <header class="site-header">
+    <a class="brand" href="./">Нотатки</a>
+    <button type="button" class="theme-toggle" data-theme-toggle>Темна тема</button>
+  </header>
+  <main class="page article-page">
+    <p class="back"><a href="./">Усі нотатки</a></p>
+    <article id="article" hidden></article>
+    <section id="missing" hidden>
+      <h1>Статтю не знайдено</h1>
+      <p>Такого матеріалу в добірці немає. Поверніться до списку й оберіть іншу нотатку.</p>
+      <p><a class="text-link" href="./">На головну</a></p>
+    </section>
+  </main>
+  <footer class="site-footer">Статичний блог. Сторінки відкриваються без збірки і без зовнішніх скриптів.</footer>
+  <script src="js/posts.js"></script>
+  <script src="js/theme.js"></script>
+  <script src="js/article.js"></script>
+</body>
+</html>
